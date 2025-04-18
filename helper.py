@@ -5,7 +5,7 @@ import cv2
 import settings
 import tempfile
 import os
-import winsound
+#import winsound
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
@@ -100,10 +100,10 @@ def _display_detected_frames(conf, model, st_frame, image, plot_person, st_plot,
         res = model.predict(image, conf=conf)
         
     #alert
-    for result in res:
+    """for result in res:
             if any(value in result.boxes.cls for value in [3.0, 4.0, 5.0, 6.0]):
                 winsound.Beep(500, 500)
-
+    """
     # # Plot the detected objects on the video frame
     res_plotted = res[0].plot()
     st_frame.image(res_plotted,
