@@ -8,6 +8,10 @@ import streamlit as st
 # Local Modules
 import settings
 import helper
+import warnings
+
+#Ignore warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # Setting page layout
 st.set_page_config(
@@ -18,7 +22,7 @@ st.set_page_config(
 )
 
 # Main page heading
-st.title("Automatic surveillance system for PPE compliance in construction sites")
+st.title("Real-time PPE Detection System for Construction Sites")
 
 # Sidebar
 st.sidebar.header("ML Model Config")
