@@ -1,5 +1,5 @@
 ultralytics
-streamlit
+streamlit==1.44.1
 matplotlib
 opencv-python-headless
 numpy
