@@ -5,3 +5,4 @@ opencv-python-headless
 numpy
 tqdm
 openvino
+lap
