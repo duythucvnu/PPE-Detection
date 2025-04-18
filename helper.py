@@ -109,7 +109,7 @@ def _display_detected_frames(conf, model, st_frame, image, plot_person, st_plot,
     st_frame.image(res_plotted,
                        caption='Detected Video',
                        channels="BGR",
-                       use_column_width=True
+                       use_container_width=True
                        )
     if plot_person == 1:
         plot(conf, model, res_plotted, res, st_plot)
@@ -265,7 +265,7 @@ def play_stored_video(conf, model):
                     st_frame.image(annotated_frame,
                                caption='Detected Video',
                                channels="BGR",
-                               use_column_width=True
+                               use_container_width=True
                                )
 
                     # Break the loop if 'q' is pressed
